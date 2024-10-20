@@ -11,7 +11,7 @@ Installation
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'monte_carlo'
+gem 'monte_carlo_rb'
 ```
 
 And then execute:
@@ -23,7 +23,7 @@ bundle install
 Or install it yourself as:
 
 ```ruby
-gem install monte_carlo
+gem install monte_carlo_rb
 ```
 
 ## Usage
@@ -35,6 +35,7 @@ Suppose you have historical data representing daily engineering throughput (e.g.
 DiceRoller is a Ruby class that simulates rolling a six-sided die. It has a method called `roll` that returns a random number between 1 and 6.
 
 ```ruby
+  require 'montecarlo'
   dice_picker = MonteCarlo::HistogramRandomPicker.new({ 1 => 1, 2 => 1, 3 => 1, 4 => 1, 5 => 1, 6 => 1 })
   simulator = MonteCarlo::Simulator.new(dice_picker)
   results = simulator.run(1_000_000)
