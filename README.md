@@ -36,8 +36,8 @@ DiceRoller is a Ruby class that simulates rolling a six-sided die. It has a meth
 
 ```ruby
   dice_picker = MonteCarlo::HistogramRandomPicker.new({ 1 => 1, 2 => 1, 3 => 1, 4 => 1, 5 => 1, 6 => 1 })
-  simulator = MonteCarlo::Simulator.new(@dice_picker)
-  results = simulator.run(@trials)
+  simulator = MonteCarlo::Simulator.new(dice_picker)
+  results = simulator.run(1_000_000)
   puts results
-  # => {1=>0.16666666666666666, 2=>0.16666666666666666, 3=>0.16666666666666666, 4=>0.16666666666666666, 5=>0.16666666666666666, 6=>0.16666666666666666}
+  # => {4=>167583, 2=>166213, 5=>165950, 3=>167050, 6=>167021, 1=>166183}
 ```
