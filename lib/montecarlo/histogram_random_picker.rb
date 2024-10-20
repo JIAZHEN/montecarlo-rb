@@ -9,7 +9,7 @@ module MonteCarlo
 
     def pick
       random_number = rand(@total_occurrences)
-      found_cumulative = @cumulative_occurrences.bsearch { |cumulative| target < cumulative[:cumulative] }
+      found_cumulative = @cumulative_occurrences.bsearch { |cumulative| random_number < cumulative[:cumulative] }
       found_cumulative[:throughput]
     end
 
@@ -19,8 +19,8 @@ module MonteCarlo
       @total_occurrences = 0
       @cumulative_occurrences = []
       @histogram.each do |outcome, occurrences|
-        total_occurrences += occurrences
-        @cumulative_occurrences << { throughput: outcome, cumulative: total_occurrences }
+        @total_occurrences += occurrences
+        @cumulative_occurrences << { throughput: outcome, cumulative: @total_occurrences }
       end
     end
   end

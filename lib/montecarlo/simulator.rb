@@ -1,5 +1,5 @@
 module MonteCarlo
-  class Smulator
+  class Simulator
     def initialize(picker)
       @picker = picker
     end
