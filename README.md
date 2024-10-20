@@ -11,7 +11,7 @@ Installation
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'monte_carlo_rb'
+gem 'montecarlo-rb'
 ```
 
 And then execute:
@@ -23,7 +23,7 @@ bundle install
 Or install it yourself as:
 
 ```ruby
-gem install monte_carlo_rb
+gem install montecarlo-rb
 ```
 
 ## Usage
