@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "MonteCarloRB"
-  s.version     = "0.0.0"
+  s.version     = "0.0.1"
   s.summary     = "MonteCarloRB is a Ruby library designed to perform Monte Carlo simulations based on historical data distributions."
   s.description = "MonteCarloRB is a Ruby library designed to perform Monte Carlo simulations based on historical data distributions."
   s.authors     = ["Jiazhen Xie"]
