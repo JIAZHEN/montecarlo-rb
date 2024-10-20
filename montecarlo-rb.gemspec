@@ -6,7 +6,6 @@ Gem::Specification.new do |s|
   s.authors     = ["Jiazhen Xie"]
   s.email       = "jiazhenxie515@gmail.com"
   s.files       = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test)/}) }
-  s.homepage    =
-    "https://rubygems.org/gems/montecarlo-rb"
-  s.license       = "MIT"
+  s.homepage    = "https://github.com/JIAZHEN/montecarlo-rb"
+  s.license     = "MIT"
 end
