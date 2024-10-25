@@ -3,7 +3,7 @@ require 'montecarlo'
 
 class TestSimulator < Minitest::Test
   def setup
-    @trials = 100_000
+    @trials = 1_000_000
     @dice_picker = MonteCarlo::HistogramRandomPicker.new({ 1 => 1, 2 => 1, 3 => 1, 4 => 1, 5 => 1, 6 => 1 })
   end
   

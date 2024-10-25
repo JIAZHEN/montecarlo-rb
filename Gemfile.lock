@@ -1,0 +1,20 @@
+PATH
+  remote: .
+  specs:
+    montecarlo-rb (0.0.3)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    parallel (1.26.3)
+
+PLATFORMS
+  arm64-darwin-23
+  ruby
+
+DEPENDENCIES
+  montecarlo-rb!
+  parallel
+
+BUNDLED WITH
+   2.5.17
